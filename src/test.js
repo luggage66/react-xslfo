@@ -15,7 +15,7 @@ class CustomComponent extends React.Component {
 
 const tree = (<CustomComponent name="outer HLC">
     <CustomComponent name="inner HLC">
-        <table></table>
+        <table>blah</table>
     </CustomComponent>
 </CustomComponent>);
 

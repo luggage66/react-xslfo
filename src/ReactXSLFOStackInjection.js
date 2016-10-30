@@ -2,6 +2,7 @@
 import ReactInjection from 'react/lib/ReactInjection';
 import ReactHostComponent from 'react/lib/ReactHostComponent';
 import ReactXSLFOComponent from './ReactXSLFOComponent';
+import ReactXSLFOTextComponent from './ReactXSLFOTextComponent';
 
 // console.log('ReactStackInjection', ReactInjection);
 
@@ -16,7 +17,7 @@ export function inject() {
     }
 
     ReactHostComponent.injection.injectGenericComponentClass(ReactXSLFOComponent);
-    //ReactHostComponent.injection.injectTextComponentClass(ReactXSLFOComponent);
+    ReactHostComponent.injection.injectTextComponentClass(ReactXSLFOTextComponent);
     //ReactHostComponent.injection.injectEmptyComponentFactory(xxx);
 
     // ReactEmptyComponent.injection.injectEmptyComponentFactory(
